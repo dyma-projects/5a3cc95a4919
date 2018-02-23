@@ -1,0 +1,15 @@
+<p>
+  directive works!
+</p>
+<p>{{firstLink}}</p>
+<input  type="text" [value] = "secondLink" ><br>
+<input  type="text" bind-value = "thirdLink" >
+
+
+<p *ngIf="status">P1</p>
+<p *ngIf="!status">P2</p>
+<button (click)="inverseStatus()"> text de mon choix</button>
+
+<ul>
+  <li *ngFor="let valeur of text" >{{valeur}}</li>
+</ul>
